@@ -1,0 +1,217 @@
+#root {
+  max-width: 570px;
+  margin: auto;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+
+#taskform{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.6rem;
+  /* border: 2px solid black; */
+}
+#barinput{
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+  border: 2px solid black;
+  border-radius: 5px;
+  padding: 0.4rem 0.8rem;
+   /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
+}
+#barinput input:focus{
+  border: none;
+  /* border-color: white; */
+}
+
+#barinput input{
+  border: none;
+  outline: none;
+  padding: 0.4rem 0.6rem;
+  font-size: 1rem;
+  width: 200px;
+}
+#barinput button{
+  background-color: black;
+  padding: 0.4rem 0.6rem;
+  border-radius: 5px;
+  border: 0;
+  cursor: pointer;
+  color: white;
+  /* transition: background-color 0.3s; */
+}
+
+#barinput button:hover {
+  background-color: rgb(86, 83, 83);
+}
+
+#barselect{
+  display: flex;
+  gap: 0.6rem;
+  /* border: 2px solid black; */
+  /* padding: 0.4rem 0.8rem; */
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+}
+
+#barselect select{
+ padding: 0.8rem 0.8rem;
+  border-radius: 5px;
+  border: 2px solid black;
+  background-color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  /* outline: none; */
+}
+
+#barselect select:focus {
+  /* border-color: yellow; */
+  outline: none;
+}
+
+#taskitem{
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* width: 100%; */
+  gap: 0.6rem;
+  /* border: 2px solid black; */
+}
+#taskinfo{
+  /* align-self:self-start; */
+  font-size: 1rem;
+  font-weight: 500;
+}
+#taskaction{
+  display: flex;
+  gap: 10px;
+}
+
+#taskaction button{
+  padding: 0.8rem 0.8rem; 
+ /* border: none; */
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+#taskaction button:first-child{
+  background-color: green;
+  color: black;
+}
+
+#taskaction button:last-child{
+  background-color: red;
+  color: black;
+}
+
+#progessstatus{
+margin-top: 10px;
+text-align: left;
+}
+
+#progessbar{
+  border: 2px solid black;
+  border-radius: 10px;
+  height: 15px;
+  overflow: hidden;
+  /* background-color: green; */
+  /* width: 50%; */
+}
+
+#progess{
+  background-color: green;
+  /* border: 1px solid black; */
+  height: 15px;
+  background: linear-gradient(90deg, #00c853, #aeea00);
+  transition: width 0.5s ease-in-out;
+
+}
+
+#deletetaskall{
+  margin-top: 10px;
+  text-align: left;
+}
+
+#deletetaskall button{
+  padding: 0.8rem 0.8rem;
+  background-color: red;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+#levelfilter{
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 1 rem;
+}
+
+#filter{
+  padding:0.5rem;
+  border-radius:6px;
+  border:1px solid #ccc;
+  font-size:1rem;
+}
+
+
+
+button:hover {
+    transform: scale(1.05);
+}
+
+#taskitem {
+  animation: fadeIn 0.4s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+#taskaction button:first-child {
+  background-color: #28a745;
+  color: white;
+}
+
+#taskaction button:last-child {
+  background-color: #dc3545;
+  color: white;
+}
+
+
+
+button:disabled {
+  background-color: #999;
+  cursor: not-allowed;
+}
+
+/* Task List hover shadow */
+/* #taskitem:hover {
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+  transform: translateY(-3px);
+} */
+
+/* Delete All button hover */
+#deletetaskall button:hover {
+  background-color: #c62828;
+  transform: scale(1.05);
+}
+
+/* Select hover */
+#barselect select:hover,
+#filter:hover {
+  border-color: #007bff;
+  box-shadow: 0 0 4px rgba(0, 123, 255, 0.3);
+}
+
+/* Progress bar smooth rounding */
+#progessbar {
+  background-color: #eee;
+  border: 1px solid #ccc;
+}
+
